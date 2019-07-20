@@ -1,12 +1,8 @@
-
-#intro
-
 print("Hello! Thank you for using Ad(just) the Tip, my free tip-calculating service. \n \n")
 input('press enter to continue...')
 
 pretax = float(input("What was the total amount before tax \n \n"))
 
-#determine service with user input tax percent is set at 10% for rideshare, 15% for dining in, and 20% for food delivery.
 
 serv = float(input("What service are you using? \n \n Select 1 for Rideshare \n Select 2 for Restaurant \n Select 3 for Delivery \n \n"))
 if serv == 1:
@@ -20,8 +16,8 @@ elif serv > 3:
     import sys
     sys.exit()      
 
-#determine if the tip will be adjusted based on the service with a multiplier
- 
+
+
 qual = float(input ("on a scale from 1-5, what was the quality of service you recieved \n \n"))
 if qual == 1:
     Q = .25
@@ -51,9 +47,6 @@ print(int((Q*T)*100))
 X = (Q*T)
 
 
-#give the users the opportunity to change the tip percent
-
-
 
 chgval = input("Would you like to change it? \n")
 if chgval == "yes":
@@ -67,12 +60,3 @@ F = ((X) * pretax) + pretax
 
 print("Your total including tax is")
 print(F)
-f = (F,"0")
-
-import re
-
-final = re.sub()
-
-
-
-
